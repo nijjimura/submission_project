@@ -31,11 +31,14 @@ namespace lab12
             for (int inxI = 0; inxI < i; inxI++)
             {
                 int length = mass[inxI].Length;
+                int sum = 0;
                 for (int inxJ = 0; inxJ < length; inxJ++) //foreach написать так
                 {
-                    Console.Write("{0}\t", mass[inxI][inxJ]);
+                    int element = mass[inxI][inxJ];
+                    sum += element;
+                    Console.Write("{0}\t", element);
                 }
-                Console.Write("\n");
+                Console.Write("\t\t\tсумма элементов:{0}\n", sum);
             }
             Console.ReadLine();
         }
