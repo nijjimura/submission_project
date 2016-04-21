@@ -59,7 +59,7 @@ namespace labs
             }
 
             private decimal getFactorial(int iterationValue) //Переполнение возможно
-            {;
+            {
                 ulong factorial = 1;
                 for (int inx = 1; inx <= iterationValue + 1; ++inx)
                 {
